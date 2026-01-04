@@ -4,20 +4,19 @@
 
 ## Quick Start
 
-This skill helps you select the right agent skill for any task without loading all skills into context.
+### Installation
 
-### Prerequisites
+1. Download the `skill.md` file from this repository
+2. Place it in your project's skills directory
+3. Start using it immediately!
 
-- None! The gateway is live at `https://openskills.space`
+### Usage
 
-### Basic Usage
+Once the skill is in your project, your AI agent can:
 
-When you need to perform a task:
-
-1. **Query the gateway** with your prompt
-2. **Review the recommendation** - see which skill was selected
-3. **Extract the content** - get the full skill documentation from response
-4. **Execute your task** using the skill instructions
+1. **Query the gateway** with a task prompt
+2. **Receive full skill documentation** in the response
+3. **Execute the task** using the returned skill instructions
 
 ## Why Use This?
 
@@ -129,56 +128,23 @@ See [EXAMPLES.md](EXAMPLES.md) for more detailed examples.
 
 ## Service Information
 
-The gateway is **live and ready to use** at:
+The gateway API is **live and ready to use** at:
 ```
-https://openskills.space
+https://openskills.space/api/recommend-skill
 ```
 
-No installation or configuration needed! Just start making requests.
+**No server setup required!** Just download the skill file, place it in your project directory, and your AI agent will automatically use the live API to get skill recommendations.
 
-**Quick Start:**
+**Quick Test:**
 ```bash
-# Make a POST request to the recommend-skill endpoint
 curl -X POST https://openskills.space/api/recommend-skill \
   -H "Content-Type: application/json" \
   -d '{"prompt": "your task description"}'
 ```
 
-For implementation details, see [IMPLEMENTATION.md](IMPLEMENTATION.md).
+## Browse Available Skills
 
-## Best Practices
-
-✅ **Do:**
-- Be specific in your prompts
-- Check the `matchScore` to assess relevance
-- Extract and use the `content` field for full skill documentation
-- Trust high match scores (>80)
-
-❌ **Don't:**
-- Use vague prompts
-- Ignore low match scores (<50)
-- Skip the `content` field - it contains the full skill docs!
-- Load all skills anyway (defeats the purpose!)
-
-## Contributing
-
-Contributions welcome! Ways to improve:
-- Better matching algorithms
-- Machine learning integration
-- Performance optimizations
-- Additional filter options
-
-## License
-
-MIT
-
-## Links
-
-- [Full Documentation](skill/skill.md)
-- [Usage Examples](EXAMPLES.md)
-- [Implementation Guide](IMPLEMENTATION.md)
-- [OpenSkills Platform](https://openskills.space)
-- [Reddit: Agent Skills Optimization](https://www.reddit.com/r/ClaudeCode/comments/1opxf9f/i_was_wrong_about_agent_skills_and_how_i_refactor/)
+Want to explore all available AI agent skills? Check out the **[Awesome Skills](https://github.com/onurkanbakirci/awesome-skills)** repository - a curated collection you can browse, search, and download at [openskills.space](https://openskills.space).
 
 ---
 
