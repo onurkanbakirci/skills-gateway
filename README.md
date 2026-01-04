@@ -6,7 +6,13 @@
 
 ### Installation
 
-1. Download the `skill.md` file from this repository
+**Option 1: Download via curl**
+```bash
+curl https://openskills.space/api/download/72e77fcc-c2f0-4327-b5ab-fd7655bb000f -o onurkanbakirci-skills-gateway.zip
+```
+
+**Option 2: Manual Download**
+1. Download the `SKILL.md` file from this repository
 2. Place it in your project's skills directory
 3. Start using it immediately!
 
@@ -91,40 +97,6 @@ Find the best skill for a task and get its full documentation.
 ```
 
 **Key**: Extract the `content` field to get the complete skill documentation.
-
-See [skill/skill.md](skill/skill.md) for complete documentation.
-
-## Live Example
-
-```bash
-curl -X POST https://openskills.space/api/recommend-skill \
-  -H "Content-Type: application/json" \
-  -d '{
-    "prompt": "Create a PDF report with charts"
-  }'
-```
-
-Response:
-```json
-{
-  "message": "Skill recommendation found",
-  "recommendedSkill": {
-    "id": "d54585ee-5994-456e-bdf3-d37117eeaa1d",
-    "name": "pdf",
-    "description": "Generate, process, and manipulate PDF documents",
-    "category": "Productivity",
-    "tags": ["pdf", "documents", "processing"],
-    "sourceUrl": "https://github.com/anthropics/skills/tree/main/skills/pdf",
-    "owner": "anthropic",
-    "matchScore": 95.5,
-    "content": "---\nname: pdf\ndescription: Generate...\n(full SKILL.md content)"
-  }
-}
-```
-
-**Important**: Use the `content` field to access the complete skill documentation.
-
-See [EXAMPLES.md](EXAMPLES.md) for more detailed examples.
 
 ## Service Information
 
