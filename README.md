@@ -1,4 +1,4 @@
-# Skill Gateway
+# Skills Gateway
 
 > Intelligent skill selection system that reduces token consumption by 95%
 
