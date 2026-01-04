@@ -145,7 +145,3 @@ curl -X POST https://openskills.space/api/recommend-skill \
 ## Browse Available Skills
 
 Want to explore all available AI agent skills? Check out the **[Awesome Skills](https://github.com/onurkanbakirci/awesome-skills)** repository - a curated collection you can browse, search, and download at [openskills.space](https://openskills.space).
-
----
-
-**Made to optimize AI agent workflows** 🚀

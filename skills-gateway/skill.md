@@ -110,7 +110,3 @@ async function getSkillForTask(taskDescription: string) {
 2. **Check matchScore** to assess relevance
 3. **Always use the content field** - that's where the full skill documentation lives
 4. **Refine your prompt** if matchScore is low
-
----
-
-**That's it!** Make a request, get the content, follow the skill documentation.
